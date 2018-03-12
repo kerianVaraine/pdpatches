@@ -1,0 +1,18 @@
+#N canvas 596 407 259 217 10;
+#X obj 100 182 samphold~;
+#X text 63 94 input;
+#X text 148 115 fucking with input;
+#X obj 150 137 inlet;
+#X obj 78 217 outlet~;
+#X obj 151 157 phasor~ 4000;
+#X obj 64 123 inlet~;
+#X obj 65 149 spigot~;
+#X text 104 96 bypass;
+#X obj 107 113 inlet;
+#X connect 0 0 4 0;
+#X connect 3 0 5 0;
+#X connect 5 0 0 1;
+#X connect 6 0 7 0;
+#X connect 7 0 4 0;
+#X connect 7 1 0 0;
+#X connect 9 0 7 1;
